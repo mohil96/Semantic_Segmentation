@@ -17,7 +17,7 @@ You may also need [Python Image Library (PIL)](https://pillow.readthedocs.io/) f
 ##### Dataset
 Using Cityscapes Dataset
 
-##### SegNet
+### SegNet
 
 Direct adoption of classification networks for pixel-wise segmentation yields poor results mainly because
 max-pooling and sub-sampling reduce feature map resolution and hence output resolution is reduced.
@@ -34,7 +34,7 @@ not learn the up-sampling weights again.
 For every encoder layer, there exists a corresponding decoder network to up-sample the image to its
 original size. A pixelwise classification layer i.e., SoftMax unit is followed by decoder network.
 
-##### Inference Optimization
+### Inference Optimization
 
 Neural networks are typically trained with a single precision 32-bit floating point number. However, we
 do not need single precision for all the tasks, especially for something like inferencing. Lowering
@@ -45,7 +45,7 @@ Quantization involves conversion of floating point values to integers by discret
 conversion. This reduces precision to increase performance during inferencing.
 There are multiple post-training techniques available that are mentioned in detail [here](https://www.tensorflow.org/model_optimization/guide/quantization/post_training).
 
-##### Results
+### Results
 
 Mean Intersection over Union (mIoU) : 60.10
 Training accuracy : 86.66 %
