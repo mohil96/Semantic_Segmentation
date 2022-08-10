@@ -2,13 +2,8 @@
 ### Introduction
 In this project, you'll label the pixels of a road in images using a Fully Convolutional Network (FCN).
 
-### Setup
-<<<<<<< HEAD
-check notes
-
 =======
-check 
->>>>>>> master
+
 ##### Frameworks and Packages
 Make sure you have the following is installed:
  - [Python 3](https://www.python.org/)
